@@ -79,7 +79,17 @@ for i in range(10): #i - indexador do X
         if conjx[i] == conjy[j]:
             achei = True
             break
-    if achei == False:
+    #if achei == False:
+    if not achei:
         diff[proxlivre] = conjx[i]
         proxlivre += 1
 print("Diferenca: ", diff)
+
+#c.	a soma entre X e Y (soma de cada 
+# elemento de X com o elemento 
+# de mesma posição em Y)
+
+soma = [0] * 10
+for i in range(10):
+    soma[i] = conjx[i] + conjy[i]
+print("Soma: ", soma)
