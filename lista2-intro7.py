@@ -40,16 +40,26 @@ while opcao != 4:
         print("Digite janela ou corredor")
         tipo = input()
         if tipo == "janela":
+            lotado = True
             for i in range(24):
                 if janela[i] == 0:
+                    lotado = False
                     print("Posicao livre: ", i+1)
-            print("Qual posicao desejada")
-            num = int(input())
-            janela[num-1] = 1
+            if lotado:
+                print("Totalmente lotado")
+            else:
+                print("Qual posicao desejada")
+                num = int(input())
+                janela[num-1] = 1
         if tipo == "corredor":
+            lotado = True
             for i in range(24):
                 if corredor[i] == 0:
+                    lotado = False
                     print("Posicao livre: ", i+1)
-            print("Qual posicao desejada")
-            num = int(input())
-            corredor[num-1] = 1
+            if lotado:
+                print("Totalmente lotado")
+            else:
+                print("Qual posicao desejada")
+                num = int(input())
+                corredor[num-1] = 1
