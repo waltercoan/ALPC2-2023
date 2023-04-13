@@ -32,3 +32,4 @@ for aluno in range(15):
         qtdaprov += 1
 perc = (qtdaprov * 100) / 15
 print("O perc de aprovados e ", perc)
+#https://github.com/waltercoan/ALPC2-2023/blob/main/1bim/lista2-intro3.py
