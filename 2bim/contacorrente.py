@@ -1,6 +1,8 @@
 contas = [0] * 10
 saldos = [0] * 10
-
+contas = [1,2,3,4,5,6,7,8,9,10]
+saldos = [10,20,30,40,50,60,70,80,90,100]
+'''
 for c in range(10):
     repete = True
     while repete:
@@ -18,7 +20,7 @@ for c in range(10):
             repete = False
     print("Digite o saldo")
     saldos[c] = int(input())
-
+'''
 opcao = 0
 while opcao != 4:
     print("Menu")
