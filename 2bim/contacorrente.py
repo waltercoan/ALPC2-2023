@@ -55,7 +55,14 @@ while opcao != 4:
                     saldos[i] = saldos[i] - valsaq
                 else:
                     print(f"saldo insuficiente - saldo {saldos[i]}")
+                    print("saldo insuficiente - saldo ",saldos[i])
                 break
             i = i + 1
         if i == 10:
             print("Conta nao encontrada")
+    if opcao == 3:
+        total = 0
+        for i in range(10):
+            print(f"Conta {contas[i]} saldo {saldos[i]}")
+            total = total + saldos[i]
+        print("O total e ", total)
