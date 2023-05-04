@@ -6,10 +6,11 @@ while opcao != 4:
     print("3 - Opção 3")
     print("4 - SAIR")
     print("Digite a opcao desejada")
-    opcao = int(input())
+    opcao = int(input("asdfsadfsdaf. \n"))
     if opcao == 1:
         print("Codigo da opcao1")
     if opcao == 2:
         print("Codigo da opcao2")
     if opcao == 3:
         print("Codigo da opcao3")
+    
