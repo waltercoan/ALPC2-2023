@@ -5,5 +5,5 @@ def somanumeros(a:int, b:int, c:int):
             soma = soma + i
     return soma
 
-guardar = somanumeros(10,100,2)
+guardar = somanumeros(2,10,100)
 print(guardar)
